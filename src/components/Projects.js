@@ -3,7 +3,7 @@ import '../App.css'
 import Projectbox from './Projectbox'
 function Projects() {
   return (
-    <div id='projects' className='mt-40 tracking-[1px]'  style={{fontFamily:'Oswald'}}>
+    <div  className='mt-40 tracking-[1px]'  style={{fontFamily:'Oswald'}}>
 
 
         <h1 className='projects-text text-center text-[2rem]'>Projects</h1>
@@ -15,7 +15,7 @@ function Projects() {
            <Projectbox />
            </div>
 
-           <div className='lg:flex justify-between  '>
+           <div id='projects' className='lg:flex justify-between  '>
 
            <Projectbox />
            <Projectbox />

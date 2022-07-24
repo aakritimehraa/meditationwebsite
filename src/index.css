@@ -6,6 +6,7 @@
 @import 'tailwindcss/base';
  body{
      background-color: var(--color-bg-secondary);
+     width: 100%;
  }
   
  .header{
@@ -20,7 +21,8 @@
   color: var(--color-text-secondary);
  }
  .menu{
-  background: white;
+  background: var(--color-bg-secondary);
+  color: var(--color-text-primary);
   height: 100%;
   width: 100%;
   position: fixed;
@@ -30,11 +32,15 @@
  .icon{
   margin-left: 20px;
  }
+
  .menu ul{
   margin-top: 10%;
  }
  .menu ul li{
-  margin-top: 20%;
+  color: var(--color-text-primary);
+ }
+ .header-link{
+  margin-top: 10%;
  }
 
   .dark {

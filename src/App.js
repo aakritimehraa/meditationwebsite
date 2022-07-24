@@ -1,25 +1,27 @@
 import React from 'react'
-import Banner from './components/Banner'
-import Header from './components/Header'
-import Projects from './components/Projects'
 import './App.css'
 import './index.css'
 
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Contact from './pages/Contact'
+import Home from './pages/Home';
 
 function App(){
 
 
  
   return (
-    <div className='w-[100%] h-[200vh]' > 
-  <div className='max-w-[100%] w-[96%] md:max-w-[60%] md:w-[60%] h-screen m-auto '>
-      <Header />
-      <Banner />
-      <Projects />
-    </div>
-  
-
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Home />} />
+    
+    <Route path='/contact' element={<Contact />} />
+    </Routes>
+    </BrowserRouter>
   )
 }
 
