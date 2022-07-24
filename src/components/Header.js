@@ -2,10 +2,12 @@ import React, { useState } from 'react'
 import Toggle from '../toggle.js'
 import { ImMenu } from 'react-icons/im';
 import { AiOutlineClose } from 'react-icons/ai';
+import { ThemeContext } from '../themeContext.js';
 
 function Header() {
 
   const [menu, setMenu] = useState(false)
+  const { theme} = React.useContext(ThemeContext);
 
   return (
     <>
