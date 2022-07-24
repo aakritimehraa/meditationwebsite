@@ -1,4 +1,57 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
+
+
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'tailwindcss/base';
+ body{
+     background-color: var(--color-bg-secondary);
+ }
+  
+ .header{
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text-primary); 
+}
+ .header ul li{
+     color: var(--color-text-primary);
+     
+ }
+ .banner-text , .banner-p , .projects-text{
+  color: var(--color-text-secondary);
+ }
+ .menu{
+  background: white;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left:0;
+ }
+ .icon{
+  margin-left: 20px;
+ }
+ .menu ul{
+  margin-top: 10%;
+ }
+ .menu ul li{
+  margin-top: 20%;
+ }
+
+  .dark {
+    --color-bg-primary: #2d3748;
+    --color-bg-secondary: #222831;
+    --color-bg-blogs: #484848;
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #e2e8f0;
+    --color-text-accent: #81e6d9;
+  }
+  
+  .light {
+    --color-bg-primary: #ffffff;
+    --color-bg-secondary: #ffffff;
+    --color-bg-blogs:#E7E7E7;
+    --color-text-primary: #5e5c5c;
+    --color-text-secondary: #000000;
+    --color-text-accent: #2b6cb0;
+  }
+  

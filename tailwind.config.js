@@ -1,15 +1,16 @@
 module.exports = {
-  mode: 'jit',  // update this line
-  purge: ["./public/**/*.html", "./src/**/*.{js,jsx,ts,tsx,vue}"],
-    darkMode: false, // or 'media' or 'class'
-  theme: {
-    maxWidth: {
-      'hlf': '50%',
-    },
-    extend: {},
-  },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
-}
+  purge: ["./public/**/*.html", "./src/**/*.{js,jsx,ts,tsx,vue}"],    
+   darkMode: false, // or 'media' or 'class'
+     theme: {
+       extend: {},
+       screens: {
+        
+        md: '850px',
+      },
+       
+     },
+     variants: {},
+     plugins: [],
+     darkMode: 'class',
+
+   }
