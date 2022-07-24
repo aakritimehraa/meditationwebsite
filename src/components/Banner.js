@@ -7,7 +7,7 @@ import ai from '../ai.png'
 import { ThemeContext } from '../themeContext';
 
 function Banner() {
-  const { theme, setTheme } = React.useContext(ThemeContext);
+  const { theme} = React.useContext(ThemeContext);
 
   return (
     <div className='sm:mt-12 w-[100%] flex justify-center items-center flex-col-reverse lg:flex-row  '>
