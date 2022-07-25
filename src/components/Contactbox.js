@@ -17,7 +17,7 @@ function Contactbox() {
             <div className='w-[100%] flex justify-center items-start flex-col mt-[20%] dark:text-white'>
                 <h1 className='text-2xl font-semibold md:text-4xl xl:text-6xl mb-20 dark:text-white'>Love to hear from you <br></br>
                     Get in Touch 👋</h1>
-                 <form className='flex justify-center items-center flex-col' name="contact" method="POST" data-netlify="true">
+                 <form className='flex justify-center items-start flex-col' name="contact" method="POST" netlfiy data-netlify="true">
                  <input type="hidden" name="form-name" value="contact" />.
                 <label className='text-xl mb-2'>Your Name</label>
                 <input name='name' className='dark:bg-gray-900 bg-gray-100 outline-none border-none h-[50px] w-[90%] sm:w-[80%] lg:w-[90%]' type='text' placeholder='name' />
