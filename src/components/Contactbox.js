@@ -17,19 +17,21 @@ function Contactbox() {
             <div className='w-[100%] flex justify-center items-start flex-col mt-[20%] dark:text-white'>
                 <h1 className='text-2xl font-semibold md:text-4xl xl:text-6xl mb-20 dark:text-white'>Love to hear from you <br></br>
                     Get in Touch 👋</h1>
-
+                 <form name="contact" method="POST" data-netlify="true">
                 <label className='text-xl mb-2'>Your Name</label>
-                <input className='dark:bg-gray-900 bg-gray-100 outline-none border-none h-[50px] w-[90%] sm:w-[80%] lg:w-[90%]' type='text' placeholder='name' />
+                <input name='name' className='dark:bg-gray-900 bg-gray-100 outline-none border-none h-[50px] w-[90%] sm:w-[80%] lg:w-[90%]' type='text' placeholder='name' />
                 <br></br>
 
                 <label className='text-xl mb-2'>Your Email</label>
-                <input className='dark:bg-gray-900 bg-gray-100 outline-none border-none h-[50px] w-[90%] sm:w-[80%] lg:w-[90%]' type='email' placeholder='email' />
+                <input name='email' className='dark:bg-gray-900 bg-gray-100 outline-none border-none h-[50px] w-[90%] sm:w-[80%] lg:w-[90%]' type='email' placeholder='email' />
                 <br></br>
                 <label  className='text-xl mb-2'>Message</label>
-                <textarea cols='100' rows='5' className='max-w-[100%] w-[90%] sm:w-[80%] lg:w-[90%] dark:bg-gray-900 bg-gray-100 outline-none border-none'></textarea>
+                <textarea name='message' cols='100' rows='5' className='max-w-[100%] w-[90%] sm:w-[80%] lg:w-[90%] dark:bg-gray-900 bg-gray-100 outline-none border-none'></textarea>
+               
                 <button className='bg-black dark:bg-gray-900 text-white font-semibold outline-none border-none p-2 w-[40%] mt-10'>
                     Send
                 </button>
+                </form>
             </div>
             <div className='hidden xl:block mt-10'>
 
